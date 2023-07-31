@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>my music</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="player__header">
+        <div class="player__img player__img--absolute slider">
+          <button class="player__button player__button--absolute--nw playlist">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/playlist.svg"
+              alt="playlist-icon"
+            />
+          </button>
+          <button class="player__button player__button--absolute--center play">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/play.svg"
+              alt="play-icon"
+            />
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/pause.svg"
+              alt="pause-icon"
+            />
+          </button>
+          <div class="slider__content">
+            <img
+              class="img slider__img"
+              src="img/beba.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/lacancion.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/rata.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (1).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (2).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (2).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/ausencia.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/oh.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/he.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/oh.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/el dia.png"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/Birdy-2450.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/tyler.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/tyler.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/tyler.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/im.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/tyler4.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src=""
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (3).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (4).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (4).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (5).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (6).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/descarga (7).jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/JUNIOR.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="img/NATANAEL.jpg"
+              alt="cover"
+            />
+            <img
+            class="img slider__img"
+            src="img/BAD BUNNY.jpg"
+            alt="cover"
+            />
+            
+            <img
+            class="img slider__img"
+            src="img/BAD BUNNY.jpg"
+            alt="cover"
+            />
+            
+            <img
+            class="img slider__img"
+            src="img/ESLABON.jpg"
+            alt="cover"
+            />
+            
+            <img
+            class="img slider__img"
+            src="img/ESLABON.jpg"
+            alt="cover"
+            />
+            
+            <img
+            class="img slider__img"
+            src="img/oh.jpg"
+            alt="cover"
+            />
+            
+            
+          
+            
+            
+          </div>
+        </div>
+
+        <div class="player__controls">
+          <button class="player__button back">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/back.svg"
+              alt="back-icon"
+            />
+          </button>
+          <p class="player__context slider__context">
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+          </p>
+          <button class="player__button next">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="next-icon"
+            />
+          </button>
+          <div class="progres">
+            <div class="progres__filled"></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="player__playlist list">
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/beba.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Hola beba</b>
+            <span class="flex">
+              <span class="player__title">Cosculluela</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Cosculluela  Hola Beba Audio Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/lacancion.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">LA CANCION</b>
+            <span class="flex">
+              <span class="player__title">J-BALVIN x BAD BUNNY</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - J BALVIN x BAD BUNNY  LA CANCIÓN  OASIS Video Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/rata.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">La leyenda del hada y el mago</b>
+            <span class="flex">
+              <span class="player__title">Rata blanca</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Rata Blanca  La Leyenda Del Hada Y El Mago Audio_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (1).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">God´s plan</b>
+            <span class="flex">
+              <span class="player__title">Drake</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Drake  Gods Plan_v720P (1).mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Drivers Licence</b>
+            <span class="flex">
+              <span class="player__title">Olivia Rodrigo</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Olivia Rodrigo  drivers license Official Video_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (2).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">CORONE</b>
+            <span class="flex">
+              <span class="player__title">Feid</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Feid  CORONE  LETRA_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (2).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name"
+              >
+              <span class="uppercase">Feid</span></b
+            >
+            <span class="flex">
+              <span class="player__title">FERXXO IV</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Feid  FERXXO VI Audio_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src
+            ="img/ausencia.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Ausencia</b>
+            <span class="flex">
+              <span class="player__title">Willie colon</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Willie Colón  Ausencia_360p.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/oh.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Oh que sera?</b>
+            <span class="flex">
+              <span class="player__title">willie colon</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Willie Colon  Oh Qué Será Letra Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/he.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Maldito duende</b>
+            <span class="flex">
+              <span class="player__title">Heroes de silencio</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Héroes del Silencio  Maldito duende_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/oh.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Sin poderte hablar</b>
+            <span class="flex">
+              <span class="player__title">Willie colon</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Willie Colon  Sin Poderte Hablar Audio_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/el dia.png"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">El dia de mi suerte</b>
+            <span class="flex">
+              <span class="player__title">Hector lavoe</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - El Día De Mi Suerte  Héctor Lavoe  Willie Colón  Letra_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/Birdy-2450.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Not about angels</b>
+            <span class="flex">
+              <span class="player__title">Birdy</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Not about angels  Birdy  Sub Español  Lyrics_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/tyler.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">PUPPET</b>
+            <span class="flex">
+              <span class="player__title">Tyler the creator</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Tyler the Creator  Puppet LYRICS_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/tyler.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">A BOY IS A GUN</b>
+            <span class="flex">
+              <span class="player__title">Tyler the creator</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - A BOY IS A GUN_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/im.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Believer</b>
+            <span class="flex">
+              <span class="player__title">Imagine Dragons</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Cosculluela  Hola Beba Audio Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/tyler4.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Best interest</b>
+            <span class="flex">
+              <span class="player__title">Tyler the creator</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - BEST INTEREST_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/tyler4.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">EARFQUAKE</b>
+            <span class="flex">
+              <span class="player__title">Tyler the creator</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Tyler The Creator Earfquake Lyrics_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (3).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">SI A LA VIDA</b>
+            <span class="flex">
+              <span class="player__title">REDIMI2</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Redimi2  SI A LA VIDA Video Oficial feat Daliza_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (4).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Cuando sera</b>
+            <span class="flex">
+              <span class="player__title">Mora FT lunay</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Mora x Lunay  Cuando Sera Video Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (4).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Tuyo</b>
+            <span class="flex">
+              <span class="player__title">Mora</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Mora  TUYO  PRIMER DIA DE CLASES_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (5).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Tokyo</b>
+            <span class="flex">
+              <span class="player__title">Jhay cortez</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Jhay Cortez  Tokyo Official Video_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (6).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Web Cam</b>
+            <span class="flex">
+              <span class="player__title">Farruko</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Web Cam_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/descarga (7).jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">INTENCIONES MALAS</b>
+            <span class="flex">
+              <span class="player__title">JUNIOR H</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Dan Sanchez x Junior H  Intenciones Malas_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/JUNIOR.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">tal vez</b>
+            <span class="flex">
+              <span class="player__title">JUNIOR H</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Tal Vez_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/NATANAEL.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Mi bello angel</b>
+            <span class="flex">
+              <span class="player__title">natanael cano</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Natanael Cano  Mi Bello Angel LetraLyrics_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/NATANAEL.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">NATANAEL CANO</b>
+            <span class="flex">
+              <span class="player__title">Sin ti</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Sin Ti_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/BAD BUNNY.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">WHERE SHE GOES</b>
+            <span class="flex">
+              <span class="player__title">BAD BUNNY</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Bad Bunny  WHERE SHE GOES Video Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/BAD BUNNY.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">un x100to</b>
+            <span class="flex">
+              <span class="player__title">BAD BUNNY FT GRUPO FRONTERA</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Grupo Frontera x Bad Bunny  un x100to Video Oficial_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/ESLABON.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">TOMANDO TEQUILA</b>
+            <span class="flex">
+              <span class="player__title">ESLABON ARMANDO FT JHAY CORTEZ</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Tomando Tequila  Video Oficial  Eslabon Armado y Jhayco_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/ESLABON.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">JUGASTE Y SUFRI</b>
+            <span class="flex">
+              <span class="player__title">ESLABON ARMANDO</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Jugaste y Sufri  Video Oficial  Eslabon Armado ft DannyLux  DEL Records 2021_v720P.mp4"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="img/oh.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">GITANA</b>
+            <span class="flex">
+              <span class="player__title">WILLIE COLON</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="canciones/y2mate.com - Willie Colon  Gitana_v720P.mp4"
+          ></audio>
+        </li>
+      </ul>
+    </div>
+    <script src="/player.js"></script>
+  </body>
+</html>
